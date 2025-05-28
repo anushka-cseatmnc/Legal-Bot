@@ -31,17 +31,7 @@ Is it legal for employers to withhold salary?
 
 # 🧞‍♂️ How It Works
 
-User Enters a Legal Question
-        ↓
-FastAPI Receives Query → Sentiment & Prompt Cleaning (optional)
-        ↓
-Vector DB (FAISS) Queries Relevant Context From Scraped Data
-        ↓
-LangChain Combines Prompt + Context → Sent to LLM (OpenAI/Mistral)
-        ↓
-LLM Generates an Informed, Contextual Answer
-        ↓
-Streamlit Displays the Reply in a Conversational UI
+![diagram-export-5-28-2025-1_22_04-PM](https://github.com/user-attachments/assets/f4bd3fc1-3cba-41ed-b8b4-efe690ed149a)
 
 # 🔥 Upcoming Features
 
@@ -62,13 +52,8 @@ Streamlit Displays the Reply in a Conversational UI
 
 # 🛠️ Tech Stack
 
- Frontend	Streamlit (Chat UI)
- Backend	FastAPI (API Server)
-LLM	OpenAI GPT-4 / Groq LLaMA / Mistral
-Framework	LangChain
-Vector DB	FAISS + OpenAIEmbeddings
-Scraping	BeautifulSoup / Requests (Gov legal sites)
-Deployment	Streamlit Cloud / Render / HuggingFace Spaces
+![diagram-export-5-28-2025-1_23_18-PM](https://github.com/user-attachments/assets/be363c74-2028-4649-a9bb-e297c326a6fb)
+
 
  Example Queries-
 Query	Sample Bot Response
@@ -77,9 +62,6 @@ What happens if I’m detained without a warrant?	Under Article 22, you're entit
 Are unsolicited promotional calls legal? As per TRAI, you can register under DND to prevent these. Violations can be reported.
 
 # 📂 Project Structure
-graphql
-Copy
-Edit
 LegalBot/
 │
 ├── backend/
@@ -103,6 +85,9 @@ LegalBot/
 ├── .env                       # API keys and config
 ├── README.md                  # You’re reading this 📘
 └── run.sh                     # Launches backend + frontend
+
+![diagram-export-5-28-2025-1_26_16-PM](https://github.com/user-attachments/assets/6143ae6f-d46b-4f99-9c7c-85a2b3085f77)
+
 
 # 📌 Next Steps
 🔹 Train and integrate a summarization LLM for long queries
@@ -134,6 +119,7 @@ Scalable – Adaptable to different countries, jurisdictions, and use cases.
 📜 License
 This project is licensed under the MIT License. Refer to the LICENSE file for more info.
 
+
 👨‍💻 Author
 Anushka Chaudhary
 Integrated M.Tech (CSE, AI) '28
@@ -150,10 +136,3 @@ Passionate about GenAI, System Design & Legal Tech
 
 
 
-
-
-Tools
-
-
-
-ChatGPT can make mistakes. Check important info. See Cookie Preferences.
