@@ -1,132 +1,153 @@
-# 🧑‍⚖️ LegalBot – AI-Powered Legal Rights Chatbot
-Gen AI + RAG + Web Scraping + LangChain
+# ⚖️LegalBot – AI-Powered Legal Rights Chatbot
 
-# 🔍 Overview
-LegalBot is an AI-powered conversational web app that helps individuals understand their legal rights in real-time. Using LLMs, Retrieval-Augmented Generation (RAG), and web-scraped legal data, the chatbot provides personalized, accurate, and contextual legal information through a friendly Streamlit interface.
+> “Access to justice begins with access to information.”
 
-# 🚨 Problem Statement
-Accessing legal information is difficult for the average citizen. Law is buried in dense documents, official portals are hard to navigate, and human lawyers are expensive. Many individuals aren't aware of their basic rights — such as consumer protection, FIR filing, or digital privacy.
+---
 
-# 💡 Solution
-LegalBot simplifies legal knowledge through conversational AI. By scraping verified government portals and feeding the content into a vector database, the system enables an LLM to provide accurate, up-to-date, and contextually relevant answers.
+## 🔍 Overview
 
-The chatbot can address queries like-
-What are my rights when I get arrested?
-How can I file a complaint about online fraud?
-Is it legal for employers to withhold salary?
+**LegalBot** is a RAG-based legal assistant that answers Indian law-related queries using a curated set of official legal PDFs. It uses local embeddings and local LLMs (fully offline), making it cost-effective and private.
 
-# 🚀 Current Progress
+---
 
-✅ Features Implemented
+## 🚨 Problem Statement
 
-🔗 Web Scraper -  Extracts legal text from official Indian government and law commission websites.
+Most people struggle with legal awareness due to:
+- Legalese-heavy documents
+- Costly consultations
+- Low awareness of fundamental rights
 
-🧠 RAG Pipeline - Integrates FAISS vector store + LangChain + LLM to generate factually relevant answers.
+---
 
-📚 Legal Domains - Covers rights related to FIRs, consumer complaints, cyber law, and constitutional protections.
+## 💡 Solution
 
-💬 Streamlit Chat UI- A responsive frontend that allows users to chat naturally with the AI.
+LegalBot solves this with:
+-  Local **RAG Pipeline** using LangChain + FAISS + Mistral 7B
+-  24 Official Indian Legal PDFs as the core knowledge base
+- Streamlit Chat UI with FastAPI backend
+- Offline, privacy-respecting architecture (no API keys!)
 
-⚙️ FastAPI Backend- Handles prompt routing, LLM interaction, and response delivery via REST endpoints.
+---
 
-# 🧞‍♂️ How It Works
+## ⚙️ Tech Stack
 
-![diagram-export-5-28-2025-1_22_04-PM](https://github.com/user-attachments/assets/f4bd3fc1-3cba-41ed-b8b4-efe690ed149a)
+| Layer       | Tools Used |
+|-------------|------------|
+| Embedding   | `HuggingFaceEmbeddings` (MiniLM) |
+| Vector DB   | `Chroma` (FAISS backend) |
+| Document    | `LangChain PyPDFLoader`, `TextSplitter` |
+| LLM         | `Mistral-7B-Instruct` (GGUF) via `ctransformers` |
+| Backend     | `FastAPI` |
+| Frontend    | `Streamlit` |
+| Prompting   | `LangChain PromptTemplate` |
 
-# 🔥 Upcoming Features
+---
 
- User Authentication – Login/Signup system to store chat history.
+## 🧠 Technical Architecture
 
- Conversation Memory – Enable follow-up questions via session memory.
+### 1. `ingest.py` – Document Preprocessing & Vector Storage
+- Loads 24 PDFs
+- Splits into 1000-character chunks with 200 overlap
+- Embeds using MiniLM → stores in persistent FAISS (Chroma)
 
- Voice-to-Text Input – Let users speak their queries.
+### 2. `rag_pipeline.py` – RAG Chain Construction
+- Loads FAISS vector DB
+- Loads quantized Mistral-7B using `CTransformers`
+- Custom Prompt ensures:
+  - Only relevant legal info
+  - Fallback if answer not found
 
- Law Domain Expansion – Add property rights, marriage laws, tenant laws, etc.
+### 3. `main.py` – FastAPI Backend
+- POST `/chat` → gets legal answer
+- POST `/query` → gets answer + cited pages
+- GET `/health` → for uptime check
 
- PDF Upload – Summarize or extract rights from personal legal documents.
+---
 
- Multilingual Support – Serve Hindi, Tamil, and other Indian languages.
-
- Case Law Generator – Suggest recent legal precedents related to user queries.
-
-
-# 🛠️ Tech Stack
-
-![diagram-export-5-28-2025-1_23_18-PM](https://github.com/user-attachments/assets/be363c74-2028-4649-a9bb-e297c326a6fb)
-
-
- Example Queries-
-Query	Sample Bot Response
-Can I file an FIR online?	Yes. In most Indian states, FIRs can be filed online via police portals.
-What happens if I’m detained without a warrant?	Under Article 22, you're entitled to legal counsel and must be presented to a magistrate within 24 hours.
-Are unsolicited promotional calls legal? As per TRAI, you can register under DND to prevent these. Violations can be reported.
-
-# 📂 Project Structure
+## 📁 Directory Structure
 LegalBot/
-│
 ├── backend/
-│   ├── main.py                # FastAPI backend
-│   ├── rag_pipeline.py        # LangChain + FAISS logic
-│   ├── scraper.py             # Web scraper for legal docs
-│   ├── utils.py               # Helper functions
-│   └── requirements.txt       # Backend dependencies
-│
+│ ├── ingest.py # Vector store creation
+  ├── db.py 
+│ ├── rag_pipeline.py # RAG chain logic
+│ └── main.py # FastAPI server
 ├── frontend/
-│   ├── app.py                 # Streamlit chatbot interface
-│   ├── components.py          # Custom UI components
-│   └── requirements.txt       # Frontend dependencies
-│
-├── data/
-│   └── legal_docs/            # Raw + processed legal text
-│
-├── models/
-│   └── vector_store.pkl       # FAISS vector store (or Chroma)
-│
-├── .env                       # API keys and config
-├── README.md                  # You’re reading this 📘
-└── run.sh                     # Launches backend + frontend
+│ └── app.py # Streamlit chat UI
+├── data/legal_docs/ # 24 Legal PDFs
+└── README.md # You're here!
 
-![diagram-export-5-28-2025-1_26_16-PM](https://github.com/user-attachments/assets/6143ae6f-d46b-4f99-9c7c-85a2b3085f77)
+---
 
+## 🧾 List of Legal PDFs Used (All 24)
 
-# 📌 Next Steps
-🔹 Train and integrate a summarization LLM for long queries
+1. constitution of india.pdf  
+2. Indian Penal Code (IPC).pdf  
+3. RTI Act, 2005.pdf  
+4. Digital Rights & Privacy.pdf  
+5. Filing an FIR.pdf  
+6. Dowry_prohibition_act.pdf  
+7. Divorce act.pdf  
+8. Special Marriage Act.pdf  
+9. The Hindu Marriage Act.pdf  
+10. POSH Act (Sexual Harassment).pdf  
+11. Human Rights.pdf  
+12. Women’s Rights in India.pdf  
+13. Juvenile Justice Act.pdf  
+14. SC-ST Atrocities Act.pdf  
+15. Muslim Personal Law.pdf  
+16. Indian Contract Act.pdf  
+17. Indian Majority Act.pdf  
+18. Consumer protection.pdf  
+19. Fundamental rights.pdf  
+20. Right to Education Act.pdf  
+21. 11_IT_and_Cyber_Laws.pdf  
+22. Labor laws in India.pdf  
+23. NRI legal rights.pdf  
+24. How to file complaint in cyber cell.pdf  
 
-🔹 Deploy on HuggingFace Spaces / Streamlit Cloud
+---
 
-🔹 Add basic legal document upload and question answering from docs
+## 💬 Sample Questions It Can Handle
 
-🔹 Add privacy policy and disclaimer module
+- “What are my rights if police deny an FIR?”
+- “How to file a cyber crime complaint?”
+- “Is dowry punishable in India?”
+- “What are labor laws for working women?”
+- “What is the minimum age for marriage under Hindu law?”
 
-🔹 Improve prompt templating and hallucination control
+---
 
-# 🚀 Why It Matters
+## 🛡️ Privacy First
 
-Legal Awareness at Scale – Helps citizens understand their rights instantly.
+✅ No OpenAI API keys  
+✅ No user tracking  
+✅ 100% offline capability  
+✅ Local LLM + Vector DB  
 
-Cost-Effective – Replaces need for preliminary legal consultations.
+---
 
-Educational – Promotes civic knowledge and empowerment.
+## 🧠 Future Enhancements
 
-Scalable – Adaptable to different countries, jurisdictions, and use cases.
+- Voice Input (Speech-to-Text)
+- Multilingual LegalBot (Hindi, Tamil, Marathi)
+- UI Chat History + Login
+- Legal News & Updates Feed
+- PDF Upload for personal documents
 
-# 🌍 Real-World Impact
-✅ Equips citizens with legal knowledge
-✅ Reduces dependency on search-based research
-✅ Makes legal info accessible to rural/underserved regions
-✅ Potential use by NGOs, legal aid groups, educational institutions
+---
 
-📜 License
-This project is licensed under the MIT License. Refer to the LICENSE file for more info.
+## 👩‍💻 Built By
 
+**Anushka Chaudhary**  
+Integrated M.Tech (CSE, AI) | VIT Bhopal  
+ GenAI • LegalTech • LLM • LangChain • ML
 
-👨‍💻 Author
-Anushka Chaudhary
-Integrated M.Tech (CSE, AI) '28
-Passionate about GenAI, System Design & Legal Tech
+---
 
-## "Access to justice begins with access to information."
+> _"Empowering people with legal awareness is the first step toward justice."_  
+> _Be aware. Be informed. Be legally secure._
 
+---
 
 
 
