@@ -1,0 +1,9 @@
+# Backend
+fastapi
+uvicorn
+langchain
+chromadb
+sentence-transformers
+ctransformers
+pypdf
+python-multipart
