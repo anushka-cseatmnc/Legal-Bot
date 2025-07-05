@@ -8,7 +8,10 @@ from langchain_community.llms import CTransformers
 
 def get_rag_chain():
     db = Chroma(persist_directory="./chroma_db", embedding_function=HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2"))
-    retriever = db.as_retriever()
+    retriever = db.as_retriever(search_kwargs={"k": 6})
+    search_type="mmr"  # for Maximal Marginal Relevance
+    search_kwargs={"k": 8, "fetch_k": 20}
+
 
     custom_prompt_template = """
     You are an expert legal assistant. Use only the following retrieved documents to answer the legal query.
@@ -16,11 +19,9 @@ def get_rag_chain():
     “Sorry, I couldn't find relevant information in the provided legal documents.”
 
     Context from Documents:
-    -----------------------
     {context}
 
     Question: {question}
-    -----------------------
     Answer (cite legal points if needed):
     """
 
@@ -30,7 +31,7 @@ def get_rag_chain():
         model="TheBloke/Mistral-7B-Instruct-v0.1-GGUF",
         model_file="mistral-7b-instruct-v0.1.Q4_K_M.gguf",
         model_type="mistral",
-        max_new_tokens=512,
+        max_new_tokens=1024,
         temperature=0.1
     )
 

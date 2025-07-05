@@ -25,6 +25,11 @@ async def chat(req: QueryRequest):
 @app.post("/query/")
 async def query(req: QueryRequest):
     result = qa_chain.invoke(req.question)
+    for i, doc in enumerate(result["source_documents"]):
+        print(f"\n📄 Retrieved Document {i+1}:\n{doc.page_content[:300]}...\n")
+
+
+
     return {"answer": result["result"], "source_documents": [doc.page_content for doc in result["source_documents"]]}
 @app.get("/")
 async def root():

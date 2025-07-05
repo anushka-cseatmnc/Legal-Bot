@@ -31,7 +31,7 @@ if st.button("Ask"):
     else:
         st.warning("Please enter your question.")
 
-# ✅ Chat History (only if user checks it)
+# Chat History (only if user checks it)
 if show_history and st.session_state.chat_history:
     st.sidebar.markdown("### 🗂️ Chat History")
     for role, msg in st.session_state.chat_history:
@@ -40,11 +40,11 @@ if show_history and st.session_state.chat_history:
         else:
             st.sidebar.markdown(f"🤖 **Legal Bot:** {msg}")
 
-# ✅ Display latest bot response in clean styled box
+#  Display latest bot response in clean styled box
 if st.session_state.chat_history:
     last_role, last_msg = st.session_state.chat_history[-1]
     if last_role == "Legal Bot":
-        st.markdown("### 🧾 Bot's Latest Answer")
+        st.markdown("### 🧾 Answer")
         st.markdown(
             f"""
             <div style="background-color:#f0f9ff; padding: 15px; border-radius: 10px; font-size: 17px; line-height: 1.6; color: #333;">

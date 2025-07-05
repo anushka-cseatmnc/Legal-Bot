@@ -15,7 +15,7 @@ def ingest_docs(data_path="data", persist_dir="chroma_db"):
             loader = PyPDFLoader(pdf_path)
             documents.extend(loader.load())
 
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
     texts = text_splitter.split_documents(documents)
 
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -26,4 +26,4 @@ def ingest_docs(data_path="data", persist_dir="chroma_db"):
         persist_directory=persist_dir
     )
     vectordb.persist()
-    print("✅ Ingestion complete. Documents stored in Vector DB.")
+    print(" Ingestion complete. Documents stored in Vector DB.")
