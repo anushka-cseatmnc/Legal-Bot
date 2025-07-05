@@ -41,6 +41,10 @@ LegalBot solves this with:
 | Frontend    | `Streamlit` |
 | Prompting   | `LangChain PromptTemplate` |
 
+### Data Flow
+
+![image](https://github.com/user-attachments/assets/abd3ee0c-25e4-4e09-8de3-5929e5c2d433)
+
 ---
 
 ## 🧠 Technical Architecture
