@@ -62,6 +62,10 @@ LegalBot solves this with:
 - POST `/query` → gets answer + cited pages
 - GET `/health` → for uptime check
 
+  ### RAG Pipeline 
+- ![image](https://github.com/user-attachments/assets/d7b949d2-972f-48f5-9fed-e4c72f1b15be)
+
+
 ---
 
 ## 📁 Directory Structure
