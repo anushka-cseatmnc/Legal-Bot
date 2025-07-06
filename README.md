@@ -142,7 +142,7 @@ LegalBot/
 - Legal News & Updates Feed
 - PDF Upload for personal documents
 
- ### Legal-Bot Local Installation Tips
+ ### Legal-Bot Local Installation 
 
 System Requirements
 Python 3.8+
@@ -153,24 +153,17 @@ Installation Steps
 '''bashgit clone https://github.com/anushka-cseatmnc/Legal-Bot.git''' 
 '''cd Legal-Bot'''
 '''python -m venv legal_bot_env'''
+
 2. Install Dependencies
 bash# Install backend dependencies
 cd backend
 pip install -r requirements.txt
 
-# Install frontend dependencies
-cd ../frontend
-pip install -r requirements.txt
-3. Download Mistral-7B Model
-bashmkdir models
-# Download from: https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF
-# File: mistral-7b-instruct-v0.1.Q4_K_M.gguf (~4GB)
-# Save to: models/ folder
-4. Initialize Vector Database
+3. Initialize Vector Database
 bash cd backend
 python ingest.py  # Processes all 24 legal PDFs (takes 10-15 mins)
-5. Run the Application
-6.  Using run.sh 
+4 . Run the Application
+5.  Using run.sh 
 '''bashchmod +x run.sh'''
 '''./run.sh'''
 
