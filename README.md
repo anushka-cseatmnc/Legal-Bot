@@ -144,11 +144,11 @@ LegalBot/
 
  ### Legal-Bot Local Installation 
 
-System Requirements
-Python 3.8+
-8GB+ RAM (for Mistral-7B model)
+ 1-System Requirements
+Python 3.8+ , 8GB+ RAM (for Mistral-7B model)
 
-```1 Clone & Setup
+
+```1. Clone & Setup
 bashgit clone https://github.com/anushka-cseatmnc/Legal-Bot.git
 cd Legal-Bot```
 
@@ -182,9 +182,11 @@ uvicorn main:app --host 0.0.0.0 --port 8000``
 
 # Terminal 2 - Frontend  
 ```cd frontend
-streamlit run app.py --server.port 8501```
+streamlit run app.py --server.port 8501
+```
 
-🌐 Access Points
+
+### Access Points
 Chat Interface: http://localhost:8501
 API Docs: http://localhost:8000/docs
 
