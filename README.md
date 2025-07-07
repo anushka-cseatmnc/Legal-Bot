@@ -134,6 +134,21 @@ LegalBot/
 
 ---
 
+### 💡 Why I Didn’t Use a Smaller Language Model to make it feasible for deployment
+- Smaller models (like 1B–3B) were tested but didn’t perform well.
+- They couldn’t handle emotional context accurately or give empathetic responses.
+- They also struggled in combining retrieved information from documents, which is key in a RAG setup.
+- 
+> That’s why I chose the 7B model—it gives better, safer, and more human-like support without relying on cloud APIs.
+
+### Live Demo & System Walkthrough
+
+To demonstrate the app’s capabilities without requiring live hosting, a recorded demo video is provided. It includes:
+- Full walkthrough of the codebase
+- Explanation of the system architecture
+- Discussion of scalability considerations
+- Identification of bottlenecks and trade-offs
+> 📌 Watch the Demo Video 
 ## 🧠 Future Enhancements
 
 - Voice Input (Speech-to-Text)
