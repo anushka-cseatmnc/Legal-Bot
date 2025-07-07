@@ -177,7 +177,10 @@ To demonstrate the app’s capabilities without requiring live hosting, a record
 - Explanation of the system architecture
 - Discussion of scalability considerations
 - Identification of bottlenecks and trade-offs
-> 📌 Watch the Demo Video 
+> 📌 Watch the Demo Video ( will be avilable soon )
+> screenshot for refrence
+> ![WhatsApp Image 2025-07-04 at 21 17 22_0424106c](https://github.com/user-attachments/assets/2843700a-b317-4b1c-a18d-3b1127274ce2)
+
 ## 🧠 Future Enhancements
 
 - Voice Input (Speech-to-Text)
