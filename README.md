@@ -133,6 +133,14 @@ LegalBot/
 ✅ Local LLM + Vector DB  
 
 ---
+### Why This App Can’t Be Deployed on Free Cloud Tiers
+
+Although this project runs completely offline and doesn’t depend on external APIs, it requires a GPU, enough memory, and persistent storage to work properly. Free cloud platforms like Render, Hugging Face Spaces, Heroku, or AWS Free Tier don’t provide enough resources to host this app. Because 
+
+- **GPU is Required**: Even with compression, the Mistral 7B model still needs a GPU for fast, stable responses. Free services don’t offer this.
+- **Not Enough RAM**: Running the model and ChromaDB together needs –16 GB RAM, far more than the ~1 GB free tiers allow.
+- **Storage Limitations**: The model weights (~4GB) and vector database (~5–10 GB) won’t fit within the tiny storage limits of free hosting plans.
+- **Slow and Unreliable**: Free tiers often pause idle apps or limit connections, causing delays and breaking the experience for users needing emotional support.
 
 ### 💡 Why I Didn’t Use a Smaller Language Model to make it feasible for deployment
 - Smaller models (like 1B–3B) were tested but didn’t perform well.
