@@ -143,15 +143,15 @@ LegalBot/
 ## Chain of Logic
 
 > At Startup of application 
-> Both OpenAI and local LLM-based RAG chains are initialized.
->Local LLM is warmed up with a dummy invoke("hello") call to reduce latency.
-> During Runtime (Query Inference):
->The system first attempts to respond using the OpenAI RAG chain.
->If that fails (e.g., RateLimitError, timeout), it automatically falls back to the local chain—no crash, no user-facing error.
->How Fallback Works:
-> A helper function safe_invoke() wraps the .invoke() call.
-> Any exception from OpenAI inference is caught.
->  The local RAG pipeline is used to generate a final response
+>1)-  Both OpenAI and local LLM-based RAG chains are initialized.
+>2)-Local LLM is warmed up with a dummy invoke("hello") call to reduce latency.
+> 3)- During Runtime (Query Inference):
+> 4)- The system first attempts to respond using the OpenAI RAG chain.
+> 5)- If that fails (e.g., RateLimitError, timeout), it automatically falls back to the local chain—no crash, no user-facing error.
+>  How Fallback Works:
+> 1)- A helper function safe_invoke() wraps the .invoke() call.
+> 2)- Any exception from OpenAI inference is caught.
+> 3)- The local RAG pipeline is used to generate a final response
 
 ---
 ### Why This App Can’t Be Deployed on Free Cloud Tiers
