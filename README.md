@@ -132,6 +132,27 @@ LegalBot/
 ✅ 100% offline capability  
 ✅ Local LLM + Vector DB  
 
+
+ ## Open AI API LOGIC is integrated in RAG --
+ 
+>This project uses a Retrieval-Augmented Generation (RAG) pipeline designed for resilience and privacy. While OpenAI’s gpt-3.5-turbo is integrated for inference, the system defaults to a local LLM if-
+>OpenAI quota is exhausted
+> The API key is missing or invalid
+>The OpenAI service is unreachable at runtime
+
+## Chain of Logic
+
+> At Startup of application 
+> Both OpenAI and local LLM-based RAG chains are initialized.
+>Local LLM is warmed up with a dummy invoke("hello") call to reduce latency.
+> During Runtime (Query Inference):
+>The system first attempts to respond using the OpenAI RAG chain.
+>If that fails (e.g., RateLimitError, timeout), it automatically falls back to the local chain—no crash, no user-facing error.
+>How Fallback Works:
+> A helper function safe_invoke() wraps the .invoke() call.
+> Any exception from OpenAI inference is caught.
+>  The local RAG pipeline is used to generate a final response
+
 ---
 ### Why This App Can’t Be Deployed on Free Cloud Tiers
 
