@@ -20,7 +20,7 @@ if st.button("Ask"):
     if query.strip():
         with st.spinner("Thinking..."):
             try:
-                res = requests.post("http://localhost:8000/query/", json={"question": query})
+                res = requests.post("http://127.0.0.1:8000/query/", json={"question": query})
                 answer = res.json().get("answer", "Something went wrong.")
             except Exception as e:
                 answer = f"Error: {e}"
@@ -33,12 +33,12 @@ if st.button("Ask"):
 
 # Chat History (only if user checks it)
 if show_history and st.session_state.chat_history:
-    st.sidebar.markdown("### 🗂️ Chat History")
+    st.sidebar.markdown("###  Chat History")
     for role, msg in st.session_state.chat_history:
         if role == "You":
-            st.sidebar.markdown(f"🧑 **You:** {msg}")
+            st.sidebar.markdown(f" **You:** {msg}")
         else:
-            st.sidebar.markdown(f"🤖 **Legal Bot:** {msg}")
+            st.sidebar.markdown(f" **Legal Bot:** {msg}")
 
 #  Display latest bot response in clean styled box
 if st.session_state.chat_history:

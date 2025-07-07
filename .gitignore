@@ -1,0 +1,21 @@
+# Environment and secrets
+.env
+*.key
+
+# Model files
+models/*.gguf
+models/*.bin
+
+# Database
+chroma_db/
+*.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
