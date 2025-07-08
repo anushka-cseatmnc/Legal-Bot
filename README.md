@@ -179,6 +179,8 @@ To demonstrate the app’s capabilities without requiring live hosting, a record
 - Identification of bottlenecks and trade-offs
 > 📌 Watch the Demo Video ( will be avilable soon )
 > screenshot for reference
+> ![Screenshot 2025-07-08 131840](https://github.com/user-attachments/assets/a0c7f9aa-23df-4108-a0d5-f573d00e93d6)
+
 > ![WhatsApp Image 2025-07-04 at 21 17 22_0424106c](https://github.com/user-attachments/assets/2843700a-b317-4b1c-a18d-3b1127274ce2)
 
 ## 🧠 Future Enhancements
