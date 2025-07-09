@@ -179,7 +179,7 @@ To demonstrate the app’s capabilities without requiring live hosting, a record
 - Explanation of the system architecture
 - Discussion of scalability considerations
 - Identification of bottlenecks and trade-offs
-> 📌 Watch the Demo Video ( will be avilable soon )
+> 📌 Watch the Demo Video ( https://youtu.be/eBlupRjdLZE?si=oIX-Szv4htielN_a)
 > screenshot for reference
 > ![Screenshot 2025-07-08 131840](https://github.com/user-attachments/assets/a0c7f9aa-23df-4108-a0d5-f573d00e93d6)
 
