@@ -28,7 +28,7 @@ LegalBot solves this with:
 - Offline, privacy-respecting architecture (no API keys!)
 
 Important Note - 
->LegalBot is equipped with a dual-LLM inference architecture. When a valid OpenAI API key is available, it utilizes GPT-3.5 for query generation. If the key is missing, invalid, or rate-limited, the system automatically falls back to a locally hosted Mistral-7B LLM—ensuring uninterrupted, privacy-preserving access to legal assistance, even offline
+>LegalBot is equipped with a dual-LLM inference architecture. When a valid OpenAI API key is available, it utilizes GPT-3.5 for query generation. If the key is missing, invalid, or rate-limited, the system automatically falls back to a locally hosted Mistral-7B LLM—ensuring uninterrupted, privacy-preserving access to legal assistance even offline too.
 
 
 ## ⚙️ Tech Stack
