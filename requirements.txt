@@ -1,0 +1,13 @@
+# Streamlit Community Cloud entry point uses only CPU query inference.
+streamlit==1.55.0
+google-genai==2.33.0
+chromadb==1.5.9
+langchain-chroma==0.2.6
+langchain-core==1.7.7
+onnxruntime==1.23.2
+numpy==2.2.6
+tokenizers==0.22.2
+huggingface-hub==0.36.2
+filelock==4.1.0
+httpx==0.28.1
+requests==2.34.2

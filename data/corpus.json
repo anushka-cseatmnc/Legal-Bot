@@ -1,0 +1,118 @@
+{
+  "BNS 2023.pdf": {
+    "act": "Bharatiya Nyaya Sanhita, 2023",
+    "act_id": "BNS",
+    "act_number": "45 of 2023",
+    "authority_type": "primary_legislation",
+    "legal_status": "current",
+    "effective_from": "2024-07-01",
+    "commencement_notification": "S.O. 850(E)",
+    "commencement_source": "https://mha.gov.in/MHA1/Par2017/pdfs/par2024-pdfs/LS30072024/1377.pdf",
+    "source_url": "https://www.mha.gov.in/files/documents/250883_english01042024.pdf",
+    "sha256": "c9da896e7a16c481a46235789f74f545b7a9ed7f3a5c8049d0b1b9252c6731f4",
+    "gazette_sections": 358,
+    "section_headings": {"106": "Causing death by negligence", "303": "Theft", "358": "Repeal and savings"}
+  },
+  "BNSS 2023.pdf": {
+    "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "act_id": "BNSS",
+    "act_number": "46 of 2023",
+    "authority_type": "primary_legislation",
+    "legal_status": "current",
+    "effective_from": "2024-07-01",
+    "commencement_notification": "S.O. 848(E)",
+    "commencement_source": "https://www.mha.gov.in/files/whats_new_documents/BharatiyaNagarikSurakshaSanhita_24022024.pdf",
+    "source_url": "https://www.mha.gov.in/files/documents/250884_2english_01042024.pdf",
+    "gazette_sections": 531,
+    "section_headings": {"173": "Information in cognizable cases", "174": "Information as to non-cognizable cases and investigation of such cases", "531": "Repeal and savings"}
+  },
+  "BSA 2023.pdf": {
+    "act": "Bharatiya Sakshya Adhiniyam, 2023",
+    "act_id": "BSA",
+    "act_number": "47 of 2023",
+    "authority_type": "primary_legislation",
+    "legal_status": "current",
+    "effective_from": "2024-07-01",
+    "commencement_notification": "S.O. 849(E)",
+    "commencement_source": "https://mha.gov.in/MHA1/Par2017/pdfs/par2024-pdfs/LS30072024/1377.pdf",
+    "source_url": "https://www.mha.gov.in/files/whats_new_documents/250882_english_01042024.pdf",
+    "gazette_sections": 170,
+    "section_headings": {"61": "Electronic or digital record", "63": "Admissibility of electronic records", "170": "Repeal and savings"}
+  },
+  "indianpenalcode.pdf": {
+    "act": "Indian Penal Code, 1860",
+    "act_id": "IPC",
+    "authority_type": "primary_legislation",
+    "legal_status": "legacy_subject_to_savings",
+    "repealed_on": "2024-07-01",
+    "savings": "BNS section 358",
+    "body_page": 14
+  },
+  "the_code_of_criminal_procedure,_1973.pdf": {
+    "act": "Code of Criminal Procedure, 1973",
+    "act_id": "CrPC",
+    "authority_type": "primary_legislation",
+    "legal_status": "legacy_subject_to_savings",
+    "repealed_on": "2024-07-01",
+    "savings": "BNSS section 531",
+    "body_page": 21,
+    "last_body_page": 195
+  },
+  "11_IT_and_Cyber_Laws.pdf": {
+    "authority_type": "secondary",
+    "legal_status": "historical_reference"
+  },
+  "Consumer_Handbook.pdf": {
+    "authority_type": "secondary",
+    "legal_status": "historical_reference"
+  },
+  "consumer protection.pdf": {
+    "act": "Consumer Protection Act, 2019",
+    "authority_type": "primary_legislation",
+    "body_page": 1,
+    "gazette_sections": 107
+  },
+  "constitution of india.pdf": {
+    "act": "Constitution of India",
+    "authority_type": "primary_legislation",
+    "provision_type": "article",
+    "body_page": 33,
+    "last_body_page": 283
+  },
+  "it_act_2000_updated.pdf": {
+    "act": "Information Technology Act, 2000",
+    "authority_type": "primary_legislation",
+    "body_page": 6
+  },
+  "RTI act, 2005 (amended)-english version.pdf": {
+    "act": "Right to Information Act, 2005",
+    "authority_type": "primary_legislation",
+    "body_page": 4
+  },
+  "The Hindu marriage act.pdf": {
+    "act": "Hindu Marriage Act, 1955",
+    "authority_type": "primary_legislation",
+    "body_page": 3
+  },
+  "special_marriage_act.pdf": {
+    "act": "Special Marriage Act, 1954",
+    "authority_type": "primary_legislation"
+  },
+  "Divorce act.pdf": {
+    "act": "Divorce Act, 1869",
+    "authority_type": "primary_legislation"
+  },
+  "Digital Rights & Privacy.pdf": {
+    "act": "Digital Personal Data Protection Act, 2023",
+    "authority_type": "primary_legislation"
+  },
+  "codeofCivilproceedures.pdf": {
+    "authority_type": "legislative_compilation"
+  },
+  "HC_Judgements_FamilyMatters 1st regional .pdf": {
+    "authority_type": "judgment_compilation"
+  },
+  ".LANDMARK JUDGMENTS OF THE SUPREME COURT PLAIN.pdf": {
+    "authority_type": "judgment_compilation"
+  }
+}

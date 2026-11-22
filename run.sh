@@ -1,12 +1,5 @@
 #!/bin/bash
+set -e
+cd -- "$(dirname -- "$0")"
 
-echo "🔄 Ingesting documents..."
-python backend/ingest.py
-
-echo "🚀 Starting backend..."
-uvicorn backend.main:app --reload &
-
-sleep 3
-
-echo "🎨 Launching frontend..."
-streamlit run frontend/app.py
+python -m streamlit run streamlit_app.py --server.address 127.0.0.1 --server.port 8501

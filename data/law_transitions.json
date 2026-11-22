@@ -1,0 +1,600 @@
+{
+  "acts": {
+    "IPC": {
+      "name": "Indian Penal Code, 1860",
+      "document": "indianpenalcode.pdf",
+      "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/15407?view_type=browse",
+      "indexed": true,
+      "page_links": false
+    },
+    "CrPC": {
+      "name": "Code of Criminal Procedure, 1973",
+      "document": "the_code_of_criminal_procedure,_1973.pdf",
+      "url": "https://www.indiacode.nic.in/handle/123456789/15247?view_type=browse",
+      "indexed": true,
+      "page_links": false
+    },
+    "IEA": {
+      "name": "Indian Evidence Act, 1872",
+      "document": "transition/Indian Evidence Act 1872.pdf",
+      "url": "https://cdn.ncw.gov.in/wp-content/uploads/2022/12/THEINDIANEVIDENCEACT1872_0.pdf",
+      "indexed": false,
+      "page_links": true
+    },
+    "BNS": {
+      "name": "Bharatiya Nyaya Sanhita, 2023",
+      "document": "BNS 2023.pdf",
+      "url": "https://www.mha.gov.in/files/documents/250883_english01042024.pdf",
+      "indexed": true,
+      "page_links": true
+    },
+    "BNSS": {
+      "name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "document": "BNSS 2023.pdf",
+      "url": "https://www.mha.gov.in/files/documents/250884_2english_01042024.pdf",
+      "indexed": true,
+      "page_links": true
+    },
+    "BSA": {
+      "name": "Bharatiya Sakshya Adhiniyam, 2023",
+      "document": "BSA 2023.pdf",
+      "url": "https://www.mha.gov.in/files/whats_new_documents/250882_english_01042024.pdf",
+      "indexed": true,
+      "page_links": true
+    },
+    "CONS": {
+      "name": "Constitution of India",
+      "document": "constitution of india.pdf",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf",
+      "indexed": false,
+      "page_links": false
+    }
+  },
+  "pairs": {
+    "BNS": {
+      "savings": "BNS-358",
+      "effective_from": "2024-07-01",
+      "notification": "S.O. 850(E)",
+      "gazette": "https://egazette.gov.in/WriteReadData/2024/252353.pdf",
+      "correspondence": "https://www.ncrb.mha.gov.in/uploads/SankalanPortal/SectionTableBNS.html"
+    },
+    "BNSS": {
+      "savings": "BNSS-531",
+      "savings_continuation": ["BNSS-531-next"],
+      "effective_from": "2024-07-01",
+      "notification": "S.O. 848(E)",
+      "gazette": "https://egazette.gov.in/WriteReadData/2024/252354.pdf",
+      "correspondence": "https://www.ncrb.mha.gov.in/uploads/SankalanPortal/SectionTableBNSS.html"
+    },
+    "BSA": {
+      "savings": "BSA-170",
+      "effective_from": "2024-07-01",
+      "notification": "S.O. 849(E)",
+      "gazette": "https://egazette.gov.in/WriteReadData/2024/252352.pdf",
+      "correspondence": "https://www.ncrb.mha.gov.in/uploads/SankalanPortal/SectionTableBSA.html"
+    }
+  },
+  "passages": {
+    "IPC-34": {
+      "act_id": "IPC",
+      "ref": "34",
+      "page": 19,
+      "text": "When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone."
+    },
+    "BNS-3-5": {
+      "act_id": "BNS",
+      "ref": "3(5)",
+      "page": 7,
+      "text": "When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone."
+    },
+    "IPC-378": {
+      "act_id": "IPC",
+      "ref": "378",
+      "page": 94,
+      "text": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft."
+    },
+    "IPC-379": {
+      "act_id": "IPC",
+      "ref": "379",
+      "page": 95,
+      "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both."
+    },
+    "BNS-303-1": {
+      "act_id": "BNS",
+      "ref": "303(1)",
+      "page": 78,
+      "text": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft."
+    },
+    "BNS-303-2": {
+      "act_id": "BNS",
+      "ref": "303(2)",
+      "page": 79,
+      "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine:"
+    },
+    "BNS-303-proviso": {
+      "act_id": "BNS",
+      "ref": "303(2)",
+      "page": 79,
+      "text": "where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service."
+    },
+    "IPC-304A": {
+      "act_id": "IPC",
+      "ref": "304A",
+      "page": 75,
+      "text": "Whoever causes the death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both."
+    },
+    "BNS-106-1": {
+      "act_id": "BNS",
+      "ref": "106(1)",
+      "page": 34,
+      "text": "Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine."
+    },
+    "BNS-106-2": {
+      "act_id": "BNS",
+      "ref": "106(2)",
+      "page": 34,
+      "text": "Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine."
+    },
+    "IPC-376-1": {
+      "act_id": "IPC",
+      "ref": "376(1)",
+      "page": 90,
+      "text": "Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which 3[shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine]."
+    },
+    "IPC-376-3": {
+      "act_id": "IPC",
+      "ref": "376(3)",
+      "page": 91,
+      "text": "Whoever, commits rape on a woman under sixteen years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person's natural life, and shall also be liable to fine:"
+    },
+    "BNS-64": {
+      "act_id": "BNS",
+      "ref": "64",
+      "page": 23,
+      "text": "Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine."
+    },
+    "BNS-65-1": {
+      "act_id": "BNS",
+      "ref": "65(1)",
+      "page": 25,
+      "text": "Whoever, commits rape on a woman under sixteen years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine:"
+    },
+    "CrPC-154": {
+      "act_id": "CrPC",
+      "ref": "154",
+      "page": 78,
+      "text": "Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it, and the substance thereof shall be entered in a book to be kept by such officer in such form as the State Government may prescribe in this behalf:"
+    },
+    "BNSS-173-1": {
+      "act_id": "BNSS",
+      "ref": "173(1)",
+      "page": 52,
+      "text": "Every information relating to the commission of a cognizable offence, irrespective of the area where the offence is committed, may be given orally or by electronic communication to an officer in charge of a police station, and if given— (i) orally, it shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it; (ii) by electronic communication, it shall be taken on record by him on being signed within three days by the person giving it"
+    },
+    "BNSS-173-4": {
+      "act_id": "BNSS",
+      "ref": "173(4)",
+      "page": 53,
+      "text": "Any person aggrieved by a refusal on the part of an officer in charge of a police station to record the information referred to in sub-section (1), may send the substance of such information, in writing and by post, to the Superintendent of Police concerned who, if satisfied that such information discloses the commission of a cognizable offence, shall either investigate the case himself or direct an investigation to be made by any police officer subordinate to him, in the manner provided by this Sanhita, and such officer shall have all the powers of an officer in charge of the police station in relation to that offence failing which such aggrieved person may make an application to the Magistrate."
+    },
+    "CrPC-41A": {
+      "act_id": "CrPC",
+      "ref": "41A",
+      "page": 41,
+      "text": "Notice of appearance before police officer.—(1) 3[The police officer shall], in all cases where the arrest of a person is not required under the provisions of sub-section (1) of section 41, issue a notice directing the person against whom a reasonable complaint has been made, or credible information has been received, or a reasonable suspicion exists that he has committed a cognizable offence, to appear before him or at such other place as may be specified in the notice. (2) Where such a notice is issued to any person, it shall be the duty of that person to comply with the terms of the notice."
+    },
+    "BNSS-35-3": {
+      "act_id": "BNSS",
+      "ref": "35(3)",
+      "page": 14,
+      "text": "The police officer shall, in all cases where the arrest of a person is not required under sub-section ( 1) issue a notice directing the person against whom a reasonable complaint has been made, or credible information has been received, or a reasonable suspicion exists that he has committed a cognizable offence, to appear before him or at such other place as may be specified in the notice."
+    },
+    "BNSS-35-4": {
+      "act_id": "BNSS",
+      "ref": "35(4)",
+      "page": 14,
+      "text": "Where such a notice is issued to any person, it shall be the duty of that person to comply with the terms of the notice."
+    },
+    "BNSS-35-5": {
+      "act_id": "BNSS",
+      "ref": "35(5)",
+      "page": 14,
+      "text": "Where such person complies and continues to comply with the notice, he shall not be arrested in respect of the offence referred to in the notice unless, for reasons to be recorded, the police officer is of the opinion that he ought to be arrested."
+    },
+    "BNSS-35-6": {
+      "act_id": "BNSS",
+      "ref": "35(6)",
+      "page": 14,
+      "text": "Where such person, at any time, fails to comply with the terms of the notice or is unwilling to identify himself, the police officer may, subject to such orders as may have been passed by a competent Court in this behalf, arrest him for the offence mentioned in the notice."
+    },
+    "IEA-65B-1": {
+      "act_id": "IEA",
+      "ref": "65B(1)",
+      "page": 34,
+      "text": "any information contained in an electronic record which is printed on a paper, stored, recorded or copied in optical or magnetic media produced by a computer (hereinafter referred to as the computer output) shall be deemed to be also a document, if the conditions mentioned in this section are satisfied in relation to the information and computer in question"
+    },
+    "IEA-65B-4": {
+      "act_id": "IEA",
+      "ref": "65B(4)",
+      "page": 35,
+      "text": "In any proceedings where it is desired to give a statement in evidence by virtue of this section, a certificate doing any of the following things, that is to say,"
+    },
+    "BSA-63-1": {
+      "act_id": "BSA",
+      "ref": "63(1)",
+      "page": 22,
+      "text": "any information contained in an electronic record which is printed on paper, stored, recorded or copied in optical or magnetic media or semiconductor memory which is produced by a computer or any communication device or otherwise stored, recorded or copied in any electronic form (hereinafter referred to as the computer output) shall be deemed to be also a document, if the conditions mentioned in this section are satisfied"
+    },
+    "BSA-63-4": {
+      "act_id": "BSA",
+      "ref": "63(4)",
+      "page": 23,
+      "text": "In any proceeding where it is desired to give a statement in evidence by virtue of this section, a certificate doing any of the following things shall be submitted along with the electronic record at each instance where it is being submitted for admission, namely:"
+    },
+    "BSA-61": {
+      "act_id": "BSA",
+      "ref": "61",
+      "page": 22,
+      "text": "Nothing in this Adhiniyam shall apply to deny the admissibility of an electronic or digital record in the evidence on the ground that it is an electronic or digital record and such record shall, subject to section 63, have the same legal effect, validity and enforceability as other document."
+    },
+    "IEA-22A": {
+      "act_id": "IEA",
+      "ref": "22A",
+      "page": 21,
+      "text": "Oral admissions as to the contents of electronic records are not relevant, unless the genuineness of the electronic record produced is in question."
+    },
+    "BNS-358": {
+      "act_id": "BNS",
+      "ref": "358",
+      "page": 102,
+      "text": "358. (1) The Indian Penal Code is hereby repealed. (2) Notwithstanding the repeal of the Code referred to in sub-section (1), it shall not affect,— (a) the previous operation of the Code so repealed or anything duly done or suffered thereunder; or (b) any right, privilege, obligation or liability acquired, accrued or incurred under the Code so repealed; or (c) any penalty, or punishment incurred in respect of any offences committed against the Code so repealed; or (d) any investigation or remedy in respect of any such penalty, or punishment; or (e) any proceeding, investigation or remedy in respect of any such penalty or punishment as aforesaid, and any such proceeding or remedy may be instituted, continued or enforced, and any such penalty may be imposed as if that Code had not been repealed."
+    },
+    "BNSS-531": {
+      "act_id": "BNSS",
+      "ref": "531",
+      "page": 156,
+      "text": "if, immediately before the date on which this Sanhita comes into force, there is any appeal, application, trial, inquiry or investigation pending, then, such appeal, application, trial, inquiry or investigation shall be disposed of, continued, held or made, as the case may be, in accordance with the provisions of the Code of Criminal"
+    },
+    "BNSS-531-next": {
+      "act_id": "BNSS",
+      "ref": "531",
+      "page": 157,
+      "text": "Procedure, 1973, as in force immediately before such commencement (hereinafter referred to as the said Code), as if this Sanhita had not come into force;"
+    },
+    "BSA-170": {
+      "act_id": "BSA",
+      "ref": "170",
+      "page": 45,
+      "text": "if, immediately before the date on which this Adhiniyam comes into force, there is any application, trial, inquiry, investigation, proceeding or appeal pending, then, such application, trial, inquiry, investigation, proceeding or appeal shall be dealt with under the provisions of the Indian Evidence Act, 1872, as in force immediately before such commencement, as if this Adhiniyam had not come into force."
+    },
+    "BNSS-1": {
+      "act_id": "BNSS",
+      "ref": "1",
+      "page": 1,
+      "text": "other than those relating to Chapters IX, XI and XII thereof, shall not apply— (a) to the State of Nagaland; (b) to the tribal areas, but the concerned State Government may, by notification, apply such provisions or any of them to the whole or part of the State of Nagaland or such tribal areas, as the case may be, with such supplemental, incidental or consequential modifications, as may be specified in the notification."
+    },
+    "CONS-20": {
+      "act_id": "CONS",
+      "ref": "20(1)",
+      "page": 42,
+      "text": "No person shall be convicted of any offence except for violation of a law in force at the time of the commission of the Act charged as an offence, nor be subjected to a penalty greater than that which might have been inflicted under the law in force at the time of the commission of the offence."
+    }
+  },
+  "mappings": [
+    {
+      "id": "common-intention",
+      "pair": "BNS",
+      "title": "Common intention",
+      "keywords": [
+        "joint liability",
+        "acts done in furtherance of common intention"
+      ],
+      "kind": "renumbered",
+      "old": [
+        "IPC-34"
+      ],
+      "new": [
+        "BNS-3-5"
+      ],
+      "notes": [
+        {
+          "category": "Renumbering",
+          "text": "The operative wording agrees in the two cited excerpts. The rule moved from a standalone section into BNS section 3(5). No substantive change is verified in this clause.",
+          "sources": [
+            "IPC-34",
+            "BNS-3-5"
+          ]
+        }
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "theft",
+      "pair": "BNS",
+      "title": "Theft and its punishment",
+      "keywords": [
+        "stolen property",
+        "stealing",
+        "punishment for theft",
+        "community service"
+      ],
+      "kind": "modified",
+      "old": [
+        "IPC-378",
+        "IPC-379"
+      ],
+      "new": [
+        "BNS-303-1",
+        "BNS-303-2",
+        "BNS-303-proviso"
+      ],
+      "notes": [
+        {
+          "category": "Textual continuity",
+          "text": "IPC section 378 corresponds to BNS section 303(1). Both excerpts require moving movable property with dishonest intent, out of another person's possession and without consent.",
+          "sources": [
+            "IPC-378",
+            "BNS-303-1"
+          ]
+        },
+        {
+          "category": "Substantive change",
+          "text": "IPC section 379 corresponds to BNS section 303(2). The new text adds a separate punishment for repeat convictions. It also provides community service for a first conviction where the value is below ₹5,000, upon return of the value or restoration of the property.",
+          "sources": [
+            "IPC-379",
+            "BNS-303-2",
+            "BNS-303-proviso"
+          ]
+        }
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "negligence",
+      "pair": "BNS",
+      "title": "Causing death by negligence",
+      "keywords": [
+        "rash or negligent act",
+        "medical negligence",
+        "negligent driving"
+      ],
+      "kind": "modified",
+      "old": [
+        "IPC-304A"
+      ],
+      "new": [
+        "BNS-106-1"
+      ],
+      "notes": [
+        {
+          "category": "Substantive change",
+          "text": "Both provisions address rash or negligent acts causing death and exclude culpable homicide. BNS section 106(1) raises the general maximum term from two to five years and separately sets a two-year maximum for a registered medical practitioner performing a medical procedure.",
+          "sources": [
+            "IPC-304A",
+            "BNS-106-1"
+          ]
+        }
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "non-reporting",
+      "pair": "BNS",
+      "title": "Failure to report after fatal rash or negligent driving",
+      "keywords": [
+        "hit and run",
+        "negligent driving",
+        "failure to report"
+      ],
+      "kind": "introduced",
+      "old": [],
+      "new": [
+        "BNS-106-2"
+      ],
+      "notes": [
+        {
+          "category": "Scope",
+          "text": "The NCRB table identifies section 106(2) as a new subsection. Its text adds an escape-without-reporting element. The commencement notification excluded it from the 1 July 2024 start.",
+          "sources": [
+            "BNS-106-2"
+          ]
+        }
+      ],
+      "verification": "verified",
+      "exception": "bns_106_2"
+    },
+    {
+      "id": "rape-punishment",
+      "pair": "BNS",
+      "title": "Punishment for rape and the under-sixteen provision",
+      "keywords": [
+        "punishment for rape",
+        "rape sentencing"
+      ],
+      "kind": "non_equivalent",
+      "old": [
+        "IPC-376-1",
+        "IPC-376-3"
+      ],
+      "new": [
+        "BNS-64",
+        "BNS-65-1"
+      ],
+      "notes": [
+        {
+          "category": "One-to-many",
+          "text": "The NCRB table maps the general punishment provision to BNS section 64 and the former IPC section 376(3) rule to BNS section 65(1). The under-sixteen rule now sits in a separate section. The excerpts cover the cited clauses only.",
+          "sources": [
+            "IPC-376-1",
+            "BNS-64",
+            "IPC-376-3",
+            "BNS-65-1"
+          ]
+        }
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "fir",
+      "pair": "BNSS",
+      "title": "First information reports in cognizable cases",
+      "keywords": [
+        "fir",
+        "zero fir",
+        "e fir",
+        "electronic FIR",
+        "police refusal",
+        "first information report"
+      ],
+      "kind": "modified",
+      "old": [
+        "CrPC-154"
+      ],
+      "new": [
+        "BNSS-173-1",
+        "BNSS-173-4"
+      ],
+      "notes": [
+        {
+          "category": "Procedural change",
+          "text": "BNSS section 173 expressly permits information regardless of where the offence occurred. It allows electronic communication, with signing within three days. The cited former provision describes oral information being reduced to writing.",
+          "sources": [
+            "CrPC-154",
+            "BNSS-173-1"
+          ]
+        },
+        {
+          "category": "Procedure on refusal",
+          "text": "The new provision describes written escalation to the Superintendent of Police and an application to the Magistrate if that route fails.",
+          "sources": [
+            "BNSS-173-4"
+          ]
+        }
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "notice",
+      "pair": "BNSS",
+      "title": "Notice to appear before a police officer",
+      "keywords": [
+        "notice of appearance",
+        "arrest notice",
+        "police notice"
+      ],
+      "kind": "non_equivalent",
+      "old": [
+        "CrPC-41A"
+      ],
+      "new": [
+        "BNSS-35-3",
+        "BNSS-35-4",
+        "BNSS-35-5",
+        "BNSS-35-6"
+      ],
+      "notes": [
+        {
+          "category": "One-to-many",
+          "text": "The former standalone notice section corresponds to four subsections of BNSS section 35. The new excerpts cover issuing and complying with a notice, continued compliance, and the consequences of failure to comply or identify oneself.",
+          "sources": [
+            "CrPC-41A",
+            "BNSS-35-3",
+            "BNSS-35-4",
+            "BNSS-35-5",
+            "BNSS-35-6"
+          ]
+        }
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "electronic-records",
+      "pair": "BSA",
+      "title": "Admissibility of electronic records",
+      "keywords": [
+        "digital evidence",
+        "electronic evidence",
+        "certificate for electronic records",
+        "electronic record certificate"
+      ],
+      "kind": "modified",
+      "old": [
+        "IEA-65B-1",
+        "IEA-65B-4"
+      ],
+      "new": [
+        "BSA-63-1",
+        "BSA-63-4"
+      ],
+      "notes": [
+        {
+          "category": "Change in scope",
+          "text": "BSA section 63 expressly includes semiconductor memory and communication devices in its computer-output rule. The earlier excerpt refers to computers and optical or magnetic media.",
+          "sources": [
+            "IEA-65B-1",
+            "BSA-63-1"
+          ]
+        },
+        {
+          "category": "Procedural change",
+          "text": "Both sections contain a certificate provision. BSA section 63(4) expressly calls for submission alongside the electronic record at each instance it is submitted for admission. The cited excerpts cover the introduction to the certificate rules.",
+          "sources": [
+            "IEA-65B-4",
+            "BSA-63-4"
+          ]
+        }
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "digital-status",
+      "pair": "BSA",
+      "title": "Legal effect of electronic or digital records",
+      "keywords": [
+        "legal effect of electronic records",
+        "digital evidence",
+        "electronic evidence"
+      ],
+      "kind": "introduced",
+      "old": [],
+      "new": [
+        "BSA-61"
+      ],
+      "notes": [
+        {
+          "category": "Scope",
+          "text": "The NCRB table identifies this as a new section. It gives electronic and digital records the same legal effect as other documents, subject to section 63. That qualifier is part of the provision.",
+          "sources": [
+            "BSA-61"
+          ]
+        }
+      ],
+      "verification": "verified"
+    },
+    {
+      "id": "oral-admissions",
+      "pair": "BSA",
+      "title": "Oral admissions about electronic records",
+      "keywords": [
+        "oral evidence",
+        "oral admissions",
+        "genuineness of electronic records"
+      ],
+      "kind": "omitted",
+      "old": [
+        "IEA-22A"
+      ],
+      "new": [],
+      "notes": [
+        {
+          "category": "Scope",
+          "text": "The correspondence table records IEA section 22A as deleted. That establishes the omission of the standalone section. Whether an admission is relevant under the remaining BSA provisions requires separate analysis.",
+          "sources": [
+            "IEA-22A"
+          ]
+        }
+      ],
+      "verification": "verified"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 # Environment and secrets
 .env
+.streamlit/secrets.toml
 *.key
 
 # Model files
@@ -9,6 +10,10 @@ models/*.bin
 # Database
 chroma_db/
 *.db
+*.sqlite3
+evaluation_results/
+deployment_artifacts/
+.venv/
 
 # Python
 __pycache__/
