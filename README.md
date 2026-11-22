@@ -5,12 +5,6 @@
 
 **Hybrid Retrieval · Google Gemini · Source Validation · Law Transition Explorer**
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Chroma](https://img.shields.io/badge/Chroma-Vector_Search-6C47FF)](https://www.trychroma.com/)
-[![Gemini](https://img.shields.io/badge/Google_Gemini-Hosted_LLM-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-16866B)](LICENSE)
-
 **Ask questions about Indian law, inspect the supporting statutory text, and explore changes between older and newer criminal laws.**
 
 [Repository](https://github.com/anushka-cseatmnc/Legal-Bot) · [Original project walkthrough](https://youtu.be/eBlupRjdLZE?si=oIX-Szv4htielN_a)
